@@ -2,8 +2,8 @@
 // @name Asana better workflow
 // @namespace http://example.com
 // @version 0.442
-// @updateURL https://raw.githubusercontent.com/vojtaflorian/Asana-Better-Workflow/main/AsanaBetterWorkflow.js
-// @downloadURL https://raw.githubusercontent.com/vojtaflorian/Asana-Better-Workflow/main/AsanaBetterWorkflow.js
+// @updateURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/main/AsanaBetterWorkflow.js
+// @downloadURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/main/AsanaBetterWorkflow.js
 // @description Forced Asana min width.
 // @author Vojta Florian
 // @homepage https://vojtaflorian.com
