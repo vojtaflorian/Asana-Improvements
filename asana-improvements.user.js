@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name Asana Improvements
 // @version 2025-09-29
-// @updateURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.js
-// @downloadURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.js
+// @updateURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.user.js
+// @downloadURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.user.js
 // @description Asana workflow enhancements
 // @author Vojta Florian
 // @homepage https://vojtaflorian.com
