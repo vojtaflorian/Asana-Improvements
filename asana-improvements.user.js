@@ -265,7 +265,8 @@ ${CONFIG.features.hidePaywallElements ? `
 .GlobalTopbar-upgradeButton,
 .PremiumIconItemA11y,
 .TaskPaneGenerateSubtasksButton,
-.AiAssistantGlobalTopbarPaneButtonPresentation {
+.AiAssistantGlobalTopbarPaneButtonPresentation,
+.SidebarFooter {
     display: none !important;
 }
 ` : ''}
