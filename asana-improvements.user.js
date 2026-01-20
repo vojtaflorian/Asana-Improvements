@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Asana Improvements
-// @version 1.1.6
+// @version 1.1.7
 // @updateURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.user.js?v=@version
 // @downloadURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.user.js?v=@version
 // @description Asana workflow enhancements
@@ -511,7 +511,10 @@ body.DesignTokenThemeSelectors-theme--darkMode label.SpreadsheetTaskName:hover .
 
   /**
    * Automatically click "load more" and "expand" buttons
+   * Tracks clicked elements to prevent infinite loops
    */
+  const clickedExpandButtons = new WeakSet();
+
   function autoExpandContent() {
     try {
       if (
@@ -548,6 +551,12 @@ body.DesignTokenThemeSelectors-theme--darkMode label.SpreadsheetTaskName:hover .
             return;
           }
 
+          // Skip if already clicked to prevent infinite loops
+          if (clickedExpandButtons.has(button)) {
+            return;
+          }
+
+          clickedExpandButtons.add(button);
           button.click();
         } catch (error) {
           console.error("Error clicking expand button:", error);
@@ -849,6 +858,6 @@ body.DesignTokenThemeSelectors-theme--darkMode label.SpreadsheetTaskName:hover .
       toggleCompletedSubtasks,
       applyCompletedTasksVisibility,
     },
-    version: "1.1.6",
+    version: "1.1.7",
   };
 })();
