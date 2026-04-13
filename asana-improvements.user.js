@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name Asana Improvements
 // @version 2.4.1
-// @updateURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.user.js?v=@version
-// @downloadURL https://raw.githubusercontent.com/vojtaflorian/Asana-Improvements/refs/heads/main/asana-improvements.user.js?v=@version
+// @updateURL https://github.com/vojtaflorian/Asana-Improvements/raw/main/asana-improvements.user.js?v=@version
+// @downloadURL https://github.com/vojtaflorian/Asana-Improvements/raw/main/asana-improvements.user.js?v=@version
 // @description Asana workflow enhancements (Sol + Legacy support)
 // @author Vojta Florian
 // @match https://app.asana.com/*
