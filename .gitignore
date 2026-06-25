@@ -1,0 +1,10 @@
+.clasp.json
+node_modules/
+.DS_Store
+.vscode/
+*.env
+credentials.json
+service-account*.json
+docs/plans/
+plans/
+*.bak

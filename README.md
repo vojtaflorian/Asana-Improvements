@@ -2,7 +2,14 @@
 
 A production-ready UserScript that enhances Asana's interface with improved workflow features, better visibility, and streamlined task management.
 
+**Version:** v2.5.0
+
 ## 🚀 Features
+
+### 🤖 AI Assistance (Google Gemini)
+- **AI Breakdown (✨ AI Rozpad)**: Generates a flat list of concrete, actionable subtasks for the open task. Review/edit them in a popup before writing to Asana.
+- **AI Enhance (🔮 AI Vylepšení)**: Studies the full task context (description, comments, subtasks, parent tasks, attachment names) and — using Gemini's Google Search grounding for real reference links — proposes both an improved description and supporting subtasks, all approvable in the popup.
+- **Setup**: Set your Gemini API key via the Tampermonkey menu command "Nastavit Gemini API Klíč". The key is stored locally via `GM_setValue`.
 
 ### 📅 Intelligent Due Date Display
 - **Automatic Days Remaining Calculation**: Shows number of days remaining next to each due date
@@ -252,7 +259,12 @@ Contributions, issues, and feature requests are welcome!
 
 ## 📝 Changelog
 
-### Version 1.0.0 (Current)
+### v2.5.0
+- ✨ AI Breakdown (✨ AI Rozpad) — Gemini-powered subtask generation with review popup
+- 🔮 AI Enhance (🔮 AI Vylepšení) — context-aware description + subtasks with Google Search grounding
+- 🔧 Shared AI core (`callGemini`, `parseAiJson`, `gatherTaskContext`), DOM-built modal (no HTML injection), decoupled topbar buttons
+
+### Version 1.0.0
 - ✨ Production-ready release
 - ✨ Complete code refactoring with English naming
 - ✨ Comprehensive error handling
